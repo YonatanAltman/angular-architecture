@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ShareDataModule } from 'src/share-data/share-data.module';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -11,7 +10,6 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    ShareDataModule,
     RouterModule
   ],
   providers: [],
