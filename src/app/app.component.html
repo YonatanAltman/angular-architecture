@@ -1,3 +1,11 @@
-<router-outlet></router-outlet>
-
-
+<div class="header">
+    {{title}}
+</div>
+<div class="nav">
+    <div *ngFor="let nav of navs">
+        <a [routerLink]="[ nav.rout ]">{{nav.label}}</a>
+    </div>
+</div>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

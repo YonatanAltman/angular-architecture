@@ -1,0 +1,23 @@
+:host {
+    display: grid;
+    grid-template: 
+    "header header"
+    "nav main"
+    / 1fr 6fr ;
+}
+.header{
+    grid-area: header;
+    padding: 10px;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+.nav{
+    grid-area: nav;
+}
+.container {
+    grid-area: main;
+  height: 60vh;
+  width: 80%;
+  outline: solid 2px darkblue;
+}

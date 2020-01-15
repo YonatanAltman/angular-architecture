@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../service/app.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  title = {
+    title: 'Hello Works'
+  };
+  name = '';
+  constructor(private app: AppService) { }
 
   ngOnInit() {
+    console.log('ngOnInit Home');
+
+    this.name = this.app.name = 'Home';
   }
 
 }

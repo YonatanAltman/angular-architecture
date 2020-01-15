@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'architecture';
+  title = 'שלום לכל המתנדבים';
+  navs = [
+    { label: 'home', rout: 'share-data/home' },
+    { label: 'about', rout: 'share-data/about' },
+    { label: 'profile', rout: 'share-data/profile' },
+  ];
 }
