@@ -3,3 +3,17 @@
 </h1>
 
 {{name}}
+
+<div class="wrapper">
+    <input type="text" [(ngModel)]="name">
+    <app-first [message]="name" [config]="firstConfig"></app-first>
+    <app-second [message]="name" 
+    (outputMessage)="getMessage($event)"></app-second>
+    <button (click)="onClick($event)">Click</button>
+    <app-first *ngFor="let sonConfig of arr" [config]="sonConfig">
+
+    </app-first>
+
+
+
+</div>
