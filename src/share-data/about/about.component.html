@@ -3,3 +3,28 @@
     {{title.name}}
     <input type="text" [(ngModel)]="app.name">
 </div>
+
+<select name="" id="">
+    <option value="1">h</option>
+    <option value="2">h</option>
+    <option value="3">h</option>
+    <option value="$">h</option>
+    <option value="%">h</option>
+    <option value="1">h</option>
+    <option value="1">h</option>
+    <option value="1">h</option>
+</select>
+<select name="" id="">
+    <option *ngFor="let item of items; let i=index" [value]="i">{{item}}</option>
+
+</select>
+
+<div>
+    <label for="tst">Do you know?</label>
+    <input type="checkbox" name="tst" [(ngModel)]="isSomthing"/> 
+    {{isSomthing}}
+</div>
+
+<div *ngIf="isSomthing">
+    What Do you know??
+</div>
